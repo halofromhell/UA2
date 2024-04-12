@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+        <style>
+            body {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .header {
+                width: 560px;
+                height: 60px;
+                margin: 20px;
+                padding: 20px; 
+                font-size: 18;
+                color: white;
+                background-color: rgb(68, 68, 153);
+            }
+            .container {
+                display: flex;
+                justify-content: space-between;
+                width: 600px;
+                height: 400px;
+                margin: 20px;
+                background-color: grey;
+            }
+            .barnav {
+                width: 170px;
+                height: 250px;
+                margin: 20px;
+                font-size: 18;
+                background-color: teal;
+                color: #fff;
+            }
+            .content {
+                width: 400px;
+                height: 320px;
+                background-color:#DDDDDD;
+                font-size: 2em;
+                margin: 20px;
+                padding: 20px;
+                border: 2px black; 
+            }
+            .footer {
+                width: 560px;
+                height: 40px;
+                margin: 20px;
+                padding: 20px; 
+                font-size: 18; 
+                color:  white;
+                background-color:  #09092b;
+            }
+        </style>
+        
+    </head>
+<body>
+    <div class="header">3Dimensions </div>
+    <div class="container">
+        <nav class="barnav">
+            <ul>
+                <li> The Plane</li>
+                <li> The cube</li>
+                <li> The sphere </li>
+                <li> The cone </li>
+            </ul>
+        </nav>
+        <div class="content">
+            <a-scene>
+                <a-box position="1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+                <a-sphere position="0 1.00 -4" radius="0.80" color="#EF2D5E"></a-sphere>
+                <a-plane position="0 0 -4" rotation="-90 0 0" width="3" height="3" color="#7BC8A4"></a-plane>
+            </a-scene>
+        </div>
+    </div>
+    <div class="footer">Now Let`s Design </div>
+</body>
+</html>
